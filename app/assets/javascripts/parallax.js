@@ -1,1 +1,6 @@
-$(".parallax-window").parallax({imageSrc: "bamboobackground.jpg"});
+$(document).ready(function(){
+  $('body').qpScroll({
+		imagesFolder: 'images',
+      imagesArray: [ 'bamboobackground.jpg' ],
+     });
+}); 

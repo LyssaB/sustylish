@@ -9,33 +9,32 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="/path/to/parallax.js"></script>
+    <script type="text/javascript" src="qpscroll.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
 
   <body>
-  	<header class="main">
-  		<div class="row">
-  			<a class="logo" href="#">S</a>
-  			<div class="nav-toggle">
-  				<span></span>
-  				<span></span>
-  				<span></span>
-  			</div>
-  			<nav>
-  				<ul>
-  					<li><a href="">SHOP</a></li>
-  					<li><a href="">ABOUT</a></li>
-  					<li><a href="">BLOG</a></li>
-  				</ul>
-  			</nav>
-  		</div><!--end row-->
-  	</header>
-  	<div class="parallax-window" data-parallax="scroll" data-image-src="bamboobackground.jpg">
-    <%= yield %>
-  </div>
+  	<div id="main-body">
+  		<header class="main-header">
+  			<div class="row">
+  				<a class="logo" href="#">S</a>
+  				<div class="nav-toggle">
+  					<span></span>
+  					<span></span>
+  					<span></span>
+  				</div>
+  				<nav>
+  					<ul>
+  						<li><a href="">SHOP</a></li>
+  						<li><a href="">ABOUT</a></li>
+  						<li><a href="">BLOG</a></li>
+  					</ul>
+  				</nav>
+  			</div><!--end row-->
+  		</header>
+    	<%= yield %>
+  	</div>
   </body>
 </html>
