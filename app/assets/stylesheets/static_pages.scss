@@ -2,8 +2,9 @@ body {
 	background-image: url("bamboobackground.jpg");
 	background-attachment: fixed;
 	background-size: 100vw;
+	padding-top: 70px;
 }
 
-#main-body {
-	padding-top: 50px;
+.carousel-control {
+	display: none;
 }
